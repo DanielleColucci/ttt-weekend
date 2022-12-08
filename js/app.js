@@ -56,6 +56,20 @@ function updateBoard() {
   })
 }
 
+function updateMessage() {
+  // if winner and tie still false
+  if (winner === false && tie === false) {
+    // render whose turn it is 
+    messageEl.textContent = turn === 1 ? "Player 1's turn" : "Player 2's turn"
+  }  else if (winner === false && tie){   // if winner is false and tie is true
+    // render tie message
+    messageEl.textContent = "It's a tie!"
+  } else {
+    // otherwise render player win message
+    messageEl.textContent = turn === 1 ? "Player 1 wins!" : "Player 2 wins!"
+  }
+}
+
 // Game play: 
 init()
 
@@ -99,19 +113,19 @@ init()
   //// 3g) Call a function called `render` at the end of the `init` function.
 
 
-// Step 4 - The state of the game should be rendered to the user
+//// Step 4 - The state of the game should be rendered to the user
 
-  // 4a) Create a function called `render`, then set it aside for now.
+  //// 4a) Create a function called `render`, then set it aside for now.
 
-  // 4b) Create a function called `updateBoard`.
+  //// 4b) Create a function called `updateBoard`.
 
-  // 4c) In the `updateBoard` function, loop over `board` and for each element:
-  //     - Use the current index of the iteration to access the corresponding 
-  //       square in the `squareEls` array.
-  //     - Style that square however you wish, dependent on the value  
-  //       contained in the current cell being iterated over (`-1`, `1`, or
-  //       `null`). To keep it simple, start with just putting a letter in 
-  //       each square depending on what the the value of each cell is.
+  //// 4c) In the `updateBoard` function, loop over `board` and for each element:
+  ////     - Use the current index of the iteration to access the corresponding 
+  ////       square in the `squareEls` array.
+  ////     - Style that square however you wish, dependent on the value  
+  ////       contained in the current cell being iterated over (`-1`, `1`, or
+  ////       `null`). To keep it simple, start with just putting a letter in 
+  ////       each square depending on what the the value of each cell is.
 
   // 4d) Create a function called `updateMessage`
   
