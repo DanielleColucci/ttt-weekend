@@ -91,6 +91,10 @@ function handleClick(evt) {
   }
 }
 
+function placePiece(idx) {
+  board[idx] = turn
+}
+
 // Game play: 
 init()
 
