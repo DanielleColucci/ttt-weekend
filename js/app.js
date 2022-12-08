@@ -42,7 +42,19 @@ function init() {
   render()
 }
 
+function render() {
 
+}
+
+function updateBoard() {
+  board.forEach(function(square, idx) {
+    // if value of square in board is null, insert a letter and set square equal to turn 
+    if (square === null) {
+      squareEls[idx].textContent = 'x'
+      board[idx] = turn
+    }
+  })
+}
 
 // Game play: 
 init()
