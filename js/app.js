@@ -49,10 +49,14 @@ function render() {
 
 function updateBoard() {
   board.forEach(function(square, idx) {
-    // if value of square in board is null, insert a letter and set square equal to turn 
-    if (square === null) {
+    // if value of square is 1, place an x in the square
+    // if value of square is -1, place an o
+    // if it is null, do nothing 
+    if (square === 1) {
       squareEls[idx].textContent = 'x'
-      board[idx] = turn
+    }
+    if (square === -1) {
+      squareEls[idx].textContent = 'o'
     }
   })
 }
