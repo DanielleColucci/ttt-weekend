@@ -95,6 +95,12 @@ function placePiece(idx) {
   board[idx] = turn
 }
 
+function checkForTie() {
+  tie = board.some(function(square) {
+    return square === null
+  })
+}
+
 // Game play: 
 init()
 
