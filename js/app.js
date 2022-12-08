@@ -43,7 +43,8 @@ function init() {
 }
 
 function render() {
-
+  updateBoard()
+  updateMessage()
 }
 
 function updateBoard() {
@@ -127,15 +128,15 @@ init()
   ////       `null`). To keep it simple, start with just putting a letter in 
   ////       each square depending on what the the value of each cell is.
 
-  // 4d) Create a function called `updateMessage`
+  //// 4d) Create a function called `updateMessage`
   
-  // 4e) In the `updateMessage` function, render a message based on the 
-  //     current game state:
-  //     - If both `winner` and `tie` have a value of false (meaning the game 
-  //       is still in progress), render whose turn it is.
-  //     - If `winner` is false, but `tie` is true, render a tie message.
-  //     - Otherwise, render a congratulatory message to the player that has 
-  //       won.
+  //// 4e) In the `updateMessage` function, render a message based on the 
+  ////     current game state:
+  ////     - If both `winner` and `tie` have a value of false (meaning the game 
+  ////       is still in progress), render whose turn it is.
+  ////     - If `winner` is false, but `tie` is true, render a tie message.
+  ////     - Otherwise, render a congratulatory message to the player that has 
+  ////       won.
 
   // 4f) Invoke both the `updateBoard` and the `updateMessage` functions
   //     inside of your `render` function.
