@@ -53,6 +53,11 @@ div {
   text-align: center;
 }
 
+div:hover {
+  background: white;
+  cursor: pointer;
+}
+
 #reset-button {
   color: #ffffff;
   font-family: Comfortaa, sans-serif;
