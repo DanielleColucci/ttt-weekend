@@ -36,6 +36,7 @@ let board, turn, winner, tie
 /*------------------------ Cached Element References ------------------------*/
 const squareEls = document.querySelectorAll('.sqr')
 const messageEl = document.getElementById('message')
+const buttonEl = document.getElementById('reset-button')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
