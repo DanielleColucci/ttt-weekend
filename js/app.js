@@ -78,13 +78,13 @@ function updateMessage() {
   // if winner and tie still false
   if (winner === false && tie === false) {
     // render whose turn it is 
-    messageEl.textContent = turn === 1 ? "Player 1's turn" : "Player 2's turn"
+    messageEl.textContent = turn === 1 ? "player 1's turn" : "player 2's turn"
   }  else if (winner === false && tie){   // if winner is false and tie is true
     // render tie message
-    messageEl.textContent = "It's a tie!"
+    messageEl.textContent = "it's a tie!"
   } else {
     // otherwise render player win message
-    messageEl.textContent = turn === 1 ? "Player 1 wins!" : "Player 2 wins!"
+    messageEl.textContent = turn === 1 ? "player 1 wins!" : "player 2 wins!"
   }
 }
 
