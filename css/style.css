@@ -53,26 +53,37 @@ div {
   text-align: center;
 }
 
-button#reset-button {
-  color: white;
+#reset-button {
+  color: #ffffff;
   font-family: Comfortaa, sans-serif;
   font-weight: lighter;
   text-shadow: 
+    0 0 0.5vmin #fff,
     0 0 1vmin #fff,
-    0 0 2vmin #fff,
+    0 0 1vmin #FF10F0,
+    0 0 1vmin #FF10F0,
     0 0 2vmin #FF10F0,
-    0 0 3vmin #FF10F0;
-  font-size: 4vmin;
-  background-color: white;
+    0 0 2vmin #FF10F0;
+  font-size: 5vmin;
+  background-color: #0f104c;
   border: 0.5vmin white solid;
-  border-radius: 1vmin;
+  border-radius: 5vmin;
   box-shadow: 
     0 0 0.8vmin #fff,
-    0 0 1vmin #fff,
-    0 0 1vmin #fff,
-    inset 0 0 1.5vmin #fff;
-  padding: 1vmin 3vmin;
+    0 0 0.5vmin #fff,
+    0 0 0.5vmin #fff,
+    inset 0 0 0.5vmin #fff;
+  padding: 0.5vmin 3vmin;
   margin: 5vmin;
+  cursor: pointer;
+}
+
+#reset-button:hover {
+  background-color: white;
+}
+
+#reset-button:hover:after {
+  content: '\00bb';
 }
 
 .sqr.player1 {
