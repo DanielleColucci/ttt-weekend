@@ -89,6 +89,11 @@ function handleClick(evt) {
   if (board[sqIdx] || winner) {
     return
   }
+  placePiece(sqIdx)
+  checkForTie()
+  checkForWinner()
+  switchPlayerTurn()
+  render()
 }
 
 function placePiece(idx) {
