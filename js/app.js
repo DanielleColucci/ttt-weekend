@@ -93,11 +93,13 @@ function handleClick(evt) {
   if (board[sqIdx] || winner) {
     return
   }
-  placePiece(sqIdx)
-  checkForTie()
-  checkForWinner()
-  switchPlayerTurn()
-  render()
+  if (evt.target.classList.contains('sqr')) {
+    placePiece(sqIdx)
+    checkForTie()
+    checkForWinner()
+    switchPlayerTurn()
+    render()
+  }
 }
 
 function placePiece(idx) {
