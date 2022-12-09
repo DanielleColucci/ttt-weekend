@@ -63,10 +63,10 @@ function updateBoard() {
     // if value of square is -1, place an o
     // if it is null, do nothing 
     if (square === 1) {
-      squareEls[idx].textContent = 'x'
+      squareEls[idx].textContent = 'X'
     }
     if (square === -1) {
-      squareEls[idx].textContent = 'o'
+      squareEls[idx].textContent = 'O'
     }
     if (square === null) {
       squareEls[idx].textContent = ''
@@ -292,12 +292,12 @@ init()
   ////       render that updated state to the user by calling the `render` 
   ////       function that we wrote earlier.
 
-// Step 7 - Create Reset functionality
+//// Step 7 - Create Reset functionality
 
-  // 7a) Add a reset button to the HTML document.
+  //// 7a) Add a reset button to the HTML document.
 
-  // 7b) Store the new reset button element as a cached element reference in
-  //     a constant named `resetBtnEl`.
+  //// 7b) Store the new reset button element as a cached element reference in
+  ////     a constant named `resetBtnEl`.
 
-  // 7c) Attach an event listener to the `resetBtnEl`. On the `'click'` event 
-  //     it should call the `init` function you created in step 3.
+  //// 7c) Attach an event listener to the `resetBtnEl`. On the `'click'` event 
+  ////     it should call the `init` function you created in step 3.
