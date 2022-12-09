@@ -44,7 +44,7 @@ document.querySelector('.board').addEventListener('click', handleClick)
 
 /*-------------------------------- Functions --------------------------------*/
 function init() {
-  board = [1, 1, 1, 1, 1, 1, 1, 1, 1]
+  board = [null, null, null, null, null, null, null, null, null]
   turn = 1
   winner = false
   tie = false
@@ -113,6 +113,14 @@ function checkForWinner() {
       winner = true
     }
   })
+}
+
+function switchPlayerTurn() {
+  if (winner) {
+    return
+  } else {
+    turn *= -1
+  }
 }
 
 
