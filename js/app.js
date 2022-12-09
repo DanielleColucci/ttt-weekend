@@ -101,8 +101,8 @@ function placePiece(idx) {
 }
 
 function checkForTie() {
-  tie = board.some(function(square) {
-    return square === null
+  tie = board.every(function(square) {
+    return square !== null
   })
 }
 
