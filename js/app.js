@@ -94,6 +94,7 @@ function handleClick(evt) {
     return
   }
   if (evt.target.classList.contains('sqr')) {
+    evt.target.classList = turn === 1? 'sqr player1' : 'sqr player2'
     placePiece(sqIdx)
     checkForTie()
     checkForWinner()

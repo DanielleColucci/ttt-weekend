@@ -15,13 +15,13 @@ h1, h2 {
   font-weight: lighter;
   text-shadow:
     0 0 1vmin #fff,
-    0 0 3vmin #fff,
-    0 0 3vmin #FF10F0,
-    0 0 5vmin #FF10F0,
-    0 0 7vmin #FF10F0,
-    0 0 10vmin #FF10F0,
-    0 0 10vmin #FF10F0,
-    0 0 10vmin #FF10F0;
+    0 0 2vmin #fff,
+    0 0 2vmin #B026FF,
+    0 0 3vmin #B026FF,
+    0 0 3vmin #B026FF,
+    0 0 5vmin #B026FF,
+    0 0 5vmin #B026FF,
+    0 0 5vmin #B026FF;
 }
 
 h1 {
@@ -51,14 +51,6 @@ div {
     inset 0 0 1vmin #fff;
   font-size: 8vmin;
   text-align: center;
-  color: white;
-  text-shadow: 
-    0 0 1vmin #fff,
-    0 0 3vmin #fff,
-    0 0 5vmin #01FFFF,
-    0 0 6vmin #01FFFF,
-    0 0 6vmin #01FFFF,
-    0 0 6vmin #01FFFF;
 }
 
 button#reset-button {
@@ -71,7 +63,7 @@ button#reset-button {
     0 0 2vmin #FF10F0,
     0 0 3vmin #FF10F0;
   font-size: 4vmin;
-  background-color: #0f104c;
+  background-color: white;
   border: 0.5vmin white solid;
   border-radius: 1vmin;
   box-shadow: 
@@ -81,4 +73,27 @@ button#reset-button {
     inset 0 0 1.5vmin #fff;
   padding: 1vmin 3vmin;
   margin: 5vmin;
+}
+
+.sqr.player1 {
+  color: white;
+  text-shadow: 
+    0 0 1vmin #fff,
+    0 0 2vmin #fff,
+    0 0 2vmin #01FFFF,
+    0 0 3vmin #01FFFF,
+    0 0 3vmin #01FFFF,
+    0 0 3vmin #01FFFF;
+  }
+  
+  div.player2 {
+    color: white;
+    text-shadow: 
+      0 0 1vmin #fff,
+      0 0 2vmin #fff,
+      0 0 2vmin #FF10F0,
+      0 0 3vmin #FF10F0,
+      0 0 3vmin #FF10F0,
+      0 0 3vmin #FF10F0;
+    
 }
