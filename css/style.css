@@ -78,13 +78,14 @@ div:hover {
     0 0 0.5vmin #fff,
     0 0 0.5vmin #fff,
     inset 0 0 0.5vmin #fff;
-  padding: 0.5vmin 3vmin;
+  padding: 0.5vmin 5vmin;
   margin: 5vmin;
   cursor: pointer;
 }
 
 #reset-button:hover {
   background-color: white;
+  padding: 0.5vmin 4vmin;
 }
 
 #reset-button:hover:after {
