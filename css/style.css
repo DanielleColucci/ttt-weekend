@@ -51,6 +51,9 @@ div {
     inset 0 0 1vmin #fff;
   font-size: 8vmin;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div:hover {
