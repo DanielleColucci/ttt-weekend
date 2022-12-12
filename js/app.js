@@ -127,9 +127,7 @@ function checkForWinner() {
 }
 
 function switchPlayerTurn() {
-  if (winner) {
-    return
-  } else {
+  if (!winner) {
     turn *= -1
   }
 }
