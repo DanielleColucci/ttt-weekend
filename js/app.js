@@ -67,11 +67,9 @@ function updateBoard() {
     // if it is null, do nothing 
     if (square === 1) {
       squareEls[idx].textContent = 'X'
-    }
-    if (square === -1) {
+    } else if (square === -1) {
       squareEls[idx].textContent = 'O'
-    }
-    if (square === null) {
+    } else {
       squareEls[idx].textContent = ''
     }
   })
