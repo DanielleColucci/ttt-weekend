@@ -77,10 +77,10 @@ function updateBoard() {
 
 function updateMessage() {
   // if winner and tie still false
-  if (winner === false && tie === false) {
+  if (!winner && !tie) {
     // render whose turn it is 
     messageEl.textContent = turn === 1 ? "player 1's turn" : "player 2's turn"
-  }  else if (winner === false && tie){   // if winner is false and tie is true
+  }  else if (!winner && tie){   // if winner is false and tie is true
     // render tie message
     messageEl.textContent = "it's a tie!"
   } else {
