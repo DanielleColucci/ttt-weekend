@@ -90,18 +90,16 @@ function updateMessage() {
 }
 
 function handleClick(evt) {
-  const sqIdx = evt.target.id[2]
-  if (board[sqIdx] || winner) {
+  const sqIdx = parseInt(evt.target.id[2])
+  if (isNaN(sqIdx) || board[sqIdx] || winner) {
     return
   }
-  if (evt.target.classList.contains('sqr')) {
-    evt.target.classList = turn === 1? 'sqr player1' : 'sqr player2'
-    placePiece(sqIdx)
-    checkForTie()
-    checkForWinner()
-    switchPlayerTurn()
-    render()
-  }
+  evt.target.classList = turn === 1? 'sqr player1' : 'sqr player2'
+  placePiece(sqIdx)
+  checkForTie()
+  checkForWinner()
+  switchPlayerTurn()
+  render()
 }
 
 function placePiece(idx) {
@@ -110,7 +108,7 @@ function placePiece(idx) {
 
 function checkForTie() {
   tie = board.every(function(square) {
-    return square !== null
+    return square
   })
 }
 
