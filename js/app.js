@@ -44,6 +44,9 @@ document.querySelector('.board').addEventListener('click', handleClick)
 buttonEl.addEventListener('click', init)
 
 /*-------------------------------- Functions --------------------------------*/
+
+init()
+
 function init() {
   board = [null, null, null, null, null, null, null, null, null]
   turn = 1
@@ -135,9 +138,6 @@ function switchPlayerTurn() {
   }
 }
 
-
-// Game play: 
-init()
 
 //// Step 1 - Define the required variables used to track the state of the game
 
